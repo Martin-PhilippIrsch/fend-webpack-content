@@ -3,6 +3,8 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
+    devtool: 'source-map',
     entry: './src/client/index.js',
     module: {
         // rules array contains all loader, each loader specifies what types of file  he runs
